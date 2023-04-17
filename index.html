@@ -5,14 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="output.css" />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
     <title>Test Task</title>
   </head>
+  
   <body>
     <div class="bg-white">
 <!-- header -->
@@ -209,14 +205,54 @@
     <div class="mt-8 lg:col-span-6 lg:col-start-1 lg:row-span-3 lg:row-start-1 lg:mt-0">
       <h2 class="sr-only">Images</h2>
 
-      <div class="grid grid-cols-1 lg:grid-cols-2 lg:grid-rows-1 lg:gap-8">
+      <div class="grid lg:grid-rows-1 lg:gap-8 ">
         <img src="assets/Mask.png" alt="product" class="lg:col-span-2 lg:row-span-2 rounded-lg" />
-        <div class="flex flex-row justify-center items-center gap-8 ml-[70%] w-[60%]">
-          <img src="assets/Mask.png" alt="product-2" class="rounded-lg hidden lg:block" />
-          <img src="assets/Mask.png" alt="product-3" class="rounded-lg hidden lg:block" />
-          <img src="assets/Mask.png" alt="Front of women's Basic Tee in black."
-            class="rounded-lg hidden lg:block" />
-        </div>
+
+          <div class="lg:flex hidden items-center justify-center w-full h-full py-24 sm:py-0">
+          <div class="w-full relative flex items-center justify-center">
+                <button aria-label="slide backward" class="absolute z-30 left-0 focus:outline-none focus:bg-gray-400 focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 cursor-pointer bg-white shadow-md rounded-full p-2 " id="prev">
+                    <svg class="dark:text-gray-900" width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7 1L1 7L7 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <div class="w-full h-full mx-auto overflow-x-hidden overflow-y-hidden">
+                  <div id="slider" class="flex items-center transition ease-out duration-700">
+                      <div class="flex relative ">
+                          <img src="assets/Mask.png" alt="black chair and white table" class="object-cover object-center " />
+                         
+                      </div>
+                      <div class="flex flex-shrink-0 relative w-[30%] mr-4">
+                        <img src="assets/Mask.png" alt="black chair and white table" class="object-cover object-center " />
+                       
+                    </div>  <div class="flex flex-shrink-0 relative w-[30%] mr-4">
+                      <img src="assets/Mask.png" alt="black chair and white table" class="object-cover object-center" />
+                     
+                  </div>
+                  <div class="flex flex-shrink-0 relative w-[30%] mr-4">
+                    <img src="assets/Mask.png" alt="black chair and white table" class="object-cover object-center" />
+                   
+                </div>
+                <div class="flex flex-shrink-0 relative w-[30%] mr-4">
+                  <img src="assets/Mask.png" alt="black chair and white table" class="object-cover object-center " />
+                 
+              </div>
+                <div class="flex flex-shrink-0 relative w-[30%] mr-4">
+                <img src="assets/Mask.png" alt="black chair and white table" class="object-cover object-center " />
+               
+            </div>
+                  </div>
+              </div>
+              <button aria-label="slide forward" class="absolute z-30 right-0 focus:outline-none focus:bg-gray-400 focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 bg-white shadow-md rounded-full p-2 " id="next">
+                <svg class="dark:text-gray-900" width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1L7 7L1 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+              
+          </div>
+
+        
+      </div>
+      
       </div>
     </div>
 
@@ -529,6 +565,10 @@
           </article>
         </div>
   </section>
+  
+ 
+
+
 
   <!-- Top Sales Products  -->
   <section class="mt-10 px-2 lg:px-0">
@@ -770,6 +810,8 @@
     </div>
   </footer>
     </div>
-    
+    <script src="slider.js"></script>
+
   </body>
 </html>
+
