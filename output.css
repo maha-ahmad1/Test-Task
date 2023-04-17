@@ -685,6 +685,26 @@ video {
   margin-top: 2rem;
 }
 
+.ml-\[\] {
+  margin-left: ;
+}
+
+.ml-\[10\] {
+  margin-left: 10;
+}
+
+.ml-\[10\%\] {
+  margin-left: 10%;
+}
+
+.ml-\[15\%\] {
+  margin-left: 15%;
+}
+
+.ml-\[15g\%\] {
+  margin-left: 15g%;
+}
+
 .inline-block {
   display: inline-block;
 }
