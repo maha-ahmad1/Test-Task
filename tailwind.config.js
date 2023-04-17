@@ -6,7 +6,7 @@ module.exports = {
       colors: {
         'custom-gray': '#060606',
         'green':'#A2AA7B',
-        'gray':'#556260'
+        'gray':'#556260',
       },
       textTransform: {
         uppercase: 'uppercase',
