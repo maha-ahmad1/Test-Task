@@ -14,3 +14,4 @@ function goPrev() {
 }
 prev.addEventListener("click", goPrev);
 
+
